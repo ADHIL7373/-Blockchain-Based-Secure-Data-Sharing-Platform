@@ -1,0 +1,26 @@
+{
+  "name": "blockchain-p2p-file-transfer",
+  "version": "1.0.0",
+  "description": "Secure peer-to-peer file transfer with blockchain verification",
+  "private": true,
+  "workspaces": [
+    "frontend",
+    "smart-contract",
+    "signaling-server"
+  ],
+  "scripts": {
+    "install-all": "npm install && npm install --workspace=frontend && npm install --workspace=smart-contract && npm install --workspace=signaling-server",
+    "dev": "npm run dev --workspace=frontend & npm run dev --workspace=signaling-server",
+    "build": "npm run build --workspace=frontend",
+    "test": "npm test --workspace=smart-contract"
+  },
+  "keywords": [
+    "blockchain",
+    "webrtc",
+    "p2p",
+    "encryption",
+    "file-transfer"
+  ],
+  "author": "",
+  "license": "MIT"
+}
